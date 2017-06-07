@@ -58,7 +58,7 @@ class TSaslClientTransport(TTransportBase, CReadableTransport):
     self.encode = None
 
   def isOpen(self):
-    return self._trans.isOpen()
+    return self._trans.is_open()
 
   def is_open(self):
     return self.isOpen()
