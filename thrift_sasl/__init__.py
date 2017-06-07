@@ -64,7 +64,7 @@ class TSaslClientTransport(TTransportBase, CReadableTransport):
     return self.isOpen()
 
   def open(self):
-    if not self._trans.isOpen():
+    if not self._trans.is_open():
       self._trans.open()
 
     if self.sasl is not None:
